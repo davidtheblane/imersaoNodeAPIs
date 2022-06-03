@@ -67,5 +67,4 @@ class Postgres extends ICrud {
     await this.defineModel()
   }
 }
-
 module.exports = Postgres
