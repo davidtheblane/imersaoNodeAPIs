@@ -1,5 +1,5 @@
 {
-  "name": "07-multi-db",
+  "name": "08-multi-db",
   "version": "1.0.0",
   "description": "<!-- subindo POSTGRES SERVER --> docker run --name postgres -e POSTGRES_USER=davi -e POSTGRES_PASSWORD=minhasenhasecreta -e POSTGRES_DB=heroes -p 5432:5432 -d postgres",
   "main": "index.js",
