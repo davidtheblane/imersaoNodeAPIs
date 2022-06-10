@@ -1,3 +1,4 @@
+const { connection } = require("mongoose");
 const ICrud = require("./../interfaces/interfaceCrud")
 
 class ContextStrategy extends ICrud {
@@ -18,8 +19,8 @@ class ContextStrategy extends ICrud {
     return this._database.create(item)
   }
 
-  read(item) {
-    return this._database.read(item)
+  read(item, skip, limit) {
+    return this._database.read(item, skip, limit)
   }
 
   update(id, item) {
@@ -28,6 +29,10 @@ class ContextStrategy extends ICrud {
 
   delete(id) {
     return this._database.delete(id)
+  }
+
+  close() {
+    connection.close()
   }
 }
 
