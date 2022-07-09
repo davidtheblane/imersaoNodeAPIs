@@ -1,6 +1,6 @@
 const service = require('./service')
 
-async function main () {
+async function main() {
   try {
     //! FOR
     // const result = await service.obterPessoas('a')
